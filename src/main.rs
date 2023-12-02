@@ -17,6 +17,6 @@ fn sum_lines(input: &str) -> u32 {
 }
 
 fn main() {
-   let input_file = std::fs::read_to_string("../input.txt").expect("could not read input.txt"); 
+   let input_file = std::fs::read_to_string("./input.txt").expect("could not read input.txt in current directory"); 
    println!("{}", sum_lines(&input_file));
 }
